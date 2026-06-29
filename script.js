@@ -1,13 +1,13 @@
 const openBtn = document.getElementById("openBtn");
 const gift = document.getElementById("gift");
-const opening = document.querySelector(".opening");
-
-openBtn.addEventListener("click", () => {
-    opening.style.display = "none";
-    gift.style.display = "block";
-});
+const welcome = document.querySelector(".welcome");
 const music = document.getElementById("music");
 
 openBtn.addEventListener("click", () => {
-    music.play();
+    welcome.style.display = "none";
+    gift.style.display = "block";
+
+    if (music) {
+        music.play();
+    }
 });
