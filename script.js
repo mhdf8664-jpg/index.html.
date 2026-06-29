@@ -6,3 +6,8 @@ openBtn.addEventListener("click", () => {
     opening.style.display = "none";
     gift.style.display = "block";
 });
+const music = document.getElementById("music");
+
+openBtn.addEventListener("click", () => {
+    music.play();
+});
